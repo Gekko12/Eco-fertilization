@@ -1,0 +1,5 @@
+Artificial neural network (ANN) is a computational model that consists of several processing elements that receive inputs and deliver outputs based on their predefined activation functions.
+
+In our Project,all the independent variables(crop, temperature, humidity and rainfall) are divided into two sets of training and testing dataset. According to the division of data into two sets of training and testing, each answer produces a different answer each time, so the algorithm is executed almost 150 times.
+
+So the proposed algorithm is state that, the optimal random values of the decision trees are determined by the random forest algorithm. Then in each decision tree, the features and records that need to be selected are determined. The values are entered into the artificial neural network algorithm, and instead of each tree, the decision of a neural network with the optimal number of neurons is placed. The label is then determined by a majority vote. At the end, the results are evaluated.

@@ -1,0 +1,8 @@
+Random forests (RF) are basically a bag containing n Decision Trees (DT) having a different set of hyper-parameters and trained on different subsets of data.
+
+In our project, we are going to take crop and location as input and based on it, we will predict the value of N,P and k. First we will divide our dataset into training and test dataset,where trainig dataset is 80% of the original data(2200) and rest 20% is test data. Then we will create three different random forest of size 20(Decision Tree) for each N,P, and k. Each output of N,P and k will have 20 Decision tree out of which we will select the one with the low entropy value,where Entropy is a measure of the randomness of a system which is given by,
+                    
+               Entropy E(S)= -∑p(x)*log2(p(x))
+                 
+           
+                
