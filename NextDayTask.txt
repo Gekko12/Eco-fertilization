@@ -1,5 +1,0 @@
-28/04/2022
-Wheather to consider soil type or not?
-And if considered how you achieve that, whether you use UAS data of Bangalore or what?
-Weather API how you're going to use it?
-For how many weeks you predict for heavy rainfall?
