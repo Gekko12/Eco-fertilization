@@ -1,6 +1,6 @@
-Warning
-Prolonged Rainfall Alert
-Prolonged Rainfall of greater than 12.7 mm puts your fertilizer at risk. From now 276.00 mm rainfall will receive for upcoming seven days, chances 75%
-80.82
-52.86
-23.1
+Message
+Precipitation Amount
+The amount of rain for 2 days, counting today is 0.00 mm and chances is 0%
+61.8
+76.54
+70.34

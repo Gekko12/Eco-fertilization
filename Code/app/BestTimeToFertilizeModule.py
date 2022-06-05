@@ -8,8 +8,10 @@ class BestTimeToFertilize:
     __API_KEY = "480589e42e7c4352abe4fe25bd398ab0"
     
     
-    def __init__(self, city_name = 'bangalore', days = 7):
-        self.city_name = city_name.lower()
+    def __init__(self, city_name = 'Bangalore', state_name = 'Karnataka', days = 7):
+        self.city_name = '+'.join(city_name.lower().strip().split())
+        self.state_name = '+'.join(state_name.lower().strip().split())
+        self.country_name = 'IN'
         self.days = days
         self.response = None
         self.response_code = None
@@ -17,9 +19,9 @@ class BestTimeToFertilize:
         
     def api_caller(self):
         try:
-            complete_url = "{0}city={1}&key={2}&days={3}".format(self.__BASE_URL, self.city_name, self.__API_KEY, self.days)
-            #print(complete_url)
-            #while self.response == None:
+            complete_url = "{0}city={1}&state={2}&country={3}&key={4}&days={5}".format(self.__BASE_URL, self.city_name, self.state_name, self.country_name, self.__API_KEY, self.days)
+            print(complete_url)
+            # while self.response == None:
             self.response = rq.get(complete_url)
             sleep(5)
             self.response_code = self.response.status_code
@@ -32,6 +34,8 @@ class BestTimeToFertilize:
     def is_api_call_success(self):
         if self.response_code == 200:
             return True
+        elif self.response_code == 204:
+            print('Content Not available, error code: 204')
         return False
     
 

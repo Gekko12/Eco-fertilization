@@ -32,7 +32,7 @@
                     Fill out the Details
                 </h3>
                 <div class="option2">
-    <form method="post" action="{{ url_for('gfg')}}">
+    <form method="post" action="{{ url_for('process')}}">
     <select class="state1" name="crop" onchange="print_crop('crop',this.selectedIndex);" id="sts" required></select>
     <script>
         print_crop("sts");
@@ -49,11 +49,19 @@
             </script>
         </div>
     
-        <div id="hideshow" class="npk">
-            
-
+        
+        {% for i in NPK_value %}
+        <div class="answer" id="answer2">
+           <dl>
+            <dt><h4>N</h4></dt><dd>{{i["Label_N"]}}</dd>
+            <br>
+            <dt><h4>P</h4></dt><dd>{{i["Label_P"]}}</dd>
+            <br>
+            <dt><h4>K</h4></dt><dd>{{i["Label_K"]}}</dd>
+        </dl>
+            <button onclick="hideok()" class="ok" >OK</button>
         </div>
-
+        {% endfor %}
 
 
         <div class="animaton">

@@ -13,13 +13,14 @@ def index():
 
 
 @app.route('/',methods=["GET", "POST"])
-def gfg():
+def process():
+    npk_list_dict = list()
     if request.method == "POST":
         crop = request.form.get("crop")
         state = request.form.get("state")
         city = request.form.get("city")
 
-        bttf = BestTimeToFertilize(city_name = city)
+        bttf = BestTimeToFertilize(city_name = city, state_name = state)
         bttf.api_caller()
 
         if bttf.is_api_call_success():
@@ -38,20 +39,19 @@ def gfg():
             for y_label in ['Label_N', 'Label_P', 'Label_K']:
                 npk[y_label] = est.estimator(crop, temp, humidity, rainfall, y_label)
             print(npk)
+            npk_list_dict.append(npk)
 
             output_data = category +"\n"+ heading +"\n"+ desc +"\n"+ str(npk['Label_N'])  +"\n"+ str(npk['Label_P'])  +"\n"+ str(npk['Label_K'])
             with open("output.txt", "w") as fh:
                 fh.write(output_data)
-                
-
         else:
-            print("Error occured while calling weather API")
+            print("Error Occured")
             
         with open("InputData.csv", "w") as fh:
             input_data = "%s,%s,%s" % (crop.strip(), state.strip(), city.strip())
             fh.write(input_data)
-
-    return render_template("index.html")    
+    print(npk_list_dict)
+    return render_template("index.html", NPK_value = npk_list_dict)    
 
 
 if __name__ == "__main__":
