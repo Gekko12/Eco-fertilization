@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <header>
+<nav>
+<div class="container">
+    <h3 class="logo" style="color: #008000; font-weight: 1000;">Eco<span style="color: #ffffff;">Fertilization</span></h3>
+</div>
+
+</nav>
+
+<h1 class="big-title translate" data-speed="0.5">We Make Your Land With<br> The Best Value</h1>
+
+        <img src="static/parallax/top1.png" class="top translate" data-speed="0.3" alt="">
+        <img src="static/parallax/bottom2.png" class="Bottom translate" data-speed="-0.25" alt="">
+        
+    </header>
+
+    <section id="scroll2">
+        <div class="shadow">
+           <a href="#scroll2"><div class="scroll-down"></div></a> 
+        </div>
+
+        <div class="container">
+            <div class="content opacity">
+               
+                <h3 class="title">
+                    Fill out the Details
+                </h3>
+                <div class="option2">
+    <form method="post" action="{{ url_for('gfg')}}">
+    <select class="state1" name="crop" onchange="print_crop('crop',this.selectedIndex);" id="sts" required></select>
+    <script>
+        print_crop("sts");
+        </script>
+        </div>
+<br>
+        <div class="option1">
+            <select class="state1" onchange="print_city('state',this.selectedIndex);" name="state" id="s" required ></select>
+            <br>
+            <br>
+            <select class="state1" name="city" id="state" required></select>
+            <script>
+            print_state("s");
+            </script>
+        </div>
+    
+        <div id="hideshow" class="npk">
+            
+
+        </div>
+
+
+
+        <div class="animaton">
+        <button type="submit"  id="color">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>            
+            Submit
+            </button>
+        
+    </div>
+</form>
+    <button id="popup">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        popup
+    </button>
+            </div>
+        
+        <div class="imgcontainer">
+            <img src="static/parallax/ferti.png" alt="">
+        </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container2">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Arpit Chakraborthy</h4>
+                <ul>
+                    <li><a href="#">1AT18CS020</a></li>
+                    <li><a href="#">8CS1</a></li>
+                    <li><a href="#">Department of Computer Science</a></li>
+                    <li><a href="">Atria Institute of Technology</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ishita Katiyar</h4>
+                <ul>
+                    <li><a href="#">1AT18CS044</a></li>
+                    <li><a href="#">8CS1</a></li>
+                    <li><a href="#">Department of Computer Science</a></li>
+                    <li><a href="">Atria Institute of Technology</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-col">
+                <h4>Gaurav Sharma</h4>
+                <ul><li><a href="#">1AT18CS128</a></li>
+                    <li><a href="#">8CS1</a></li>
+                    <li><a href="#">Department of Computer Science</a></li>
+                    <li><a href="">Atria Institute of Technology</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-col">
+                <h4>Sumukha Hegde</h4>
+                <ul>
+                    <li><a href="#">1AT18CS129</a></li>
+                    <li><a href="#">8CS1</a></li>
+                    <li><a href="#">Department of Computer Science</a></li>
+                    <li><a href="">Atria Institute of Technology</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
