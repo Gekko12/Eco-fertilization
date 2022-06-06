@@ -20,7 +20,7 @@ class BestTimeToFertilize:
     def api_caller(self):
         try:
             complete_url = "{0}city={1}&state={2}&country={3}&key={4}&days={5}".format(self.__BASE_URL, self.city_name, self.state_name, self.country_name, self.__API_KEY, self.days)
-            print(complete_url)
+            # print(complete_url)
             # while self.response == None:
             self.response = rq.get(complete_url)
             sleep(5)
@@ -52,7 +52,7 @@ class BestTimeToFertilize:
     def best_time_fertilize(self):
         json_obj = self.response.json()
         
-        print("City:", json_obj['city_name'], "\n")
+        # print("City:", json_obj['city_name'], "\n")
 
         prolonged_precip = 0
         prolonged_prob = 0

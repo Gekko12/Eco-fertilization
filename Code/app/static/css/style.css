@@ -5,19 +5,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
   scroll-behavior: smooth;
 }
+
 body{
     font-family: 'Poppins',sans-serif;
 }
 
 .container {
     max-width: 90rem;
-  
     margin: 3% auto;
-    
 }
+
 header {
     width: 100%;
     height: 100vh;
@@ -47,9 +48,9 @@ header::after {
     top: 0;;
     position: absolute;
     width: 100%;
-    
     z-index: 17;
 }
+
 nav{
     position: absolute;
     top: 0;
@@ -103,7 +104,6 @@ section img{
   width: 100%;
 }
 
-
 section .container > *{
     margin: 2rem;
 }
@@ -111,6 +111,7 @@ section .container > *{
 .content{
     transform: translateY(-50px);
 }
+
 .title {
     font-weight: 600;
     font-size: 1rem;
@@ -133,7 +134,6 @@ section .container > *{
 .opacity{
     opacity: 0;
 }
-
 
 section .container{
     padding: 3rem;
@@ -160,35 +160,31 @@ section .container > *{
     transform: translateY(50px);
 }
 
+/* ----------------------changes start-------------------------- */ 
+
 dt {
-  display: block;
+  display:block;
   float: left;
   text-align: center;
-  color: #151515;
-  
-}
-
-dt:after {
-  content: ':';
+  color:#151515;
 }
 
 dd {
   display: block;
 }
 
-.answer{
-   margin: 50px 80px 10px;
+.answer {
+    margin: 50px 80px 10px;
     padding: 35px;
-    border-radius: 10px;
     background-color: #ffffff;
     color: #151515;
+    border-radius: 10px;
     box-shadow: 0px 0px 4px;
     text-align: center;
 }
 
-.ok {
-  background-color: #151515;
-}
+
+/* ------------ changes end--------------------- */
 
 .scroll-down{
   height: 50px;
@@ -264,9 +260,7 @@ button {
     border-radius: 5px;
     margin-top: 40px;
     transition: 5s;
-    
     letter-spacing: 4px
-    
   }
 
   button:hover{
@@ -274,7 +268,6 @@ button {
   }
 
   button span {
-  
     position: absolute;
     display: block;
   }
@@ -377,6 +370,7 @@ color: #151515;
 #hideshow button:hover{
   background-color: green;
 }
+
 .npk{
  display: none;
 }
@@ -385,27 +379,33 @@ color: #151515;
   max-width: 1170px;
   margin: auto;
 }
+
 .row{
   display: flex;
   flex-wrap: wrap;
 }
+
 ul{
   list-style: none;
 }
+
 footer{
   background-color: #151515;
   padding: 70px 0;
 }
+
 .footer-col{
   width: 25%;
   padding: 0 15px;
 }
+
 .footer-col h4{
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 35px;
   position: relative;
 }
+
 .footer-col h4::before{
   content: '';
   position: absolute;
@@ -416,9 +416,11 @@ footer{
   box-sizing: border-box;
   width: 50px;
 }
+
 .footer-col ul li:not(:last-child){
   margin-bottom: 10px;
 }
+
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
