@@ -18,6 +18,7 @@ def processing():
         call_success = []
         npk_list_dict = []
         popup_data = []
+        seven_days = []
 
         crop = form_data['crop']
         state = form_data['state']
@@ -35,7 +36,9 @@ def processing():
 
             call_success.append(1)
             popup_data.append([category, heading, desc])
-
+            seven_days = bttf.weather_data[:]
+            # print(seven_days)
+            
             # today's weather data
             di = bttf.weather_data[0]
             temp = di['Temperature']
@@ -58,7 +61,7 @@ def processing():
         else:
             print("Error Occured")
         #print(call_success, npk_list_dict, form_data, popup_data)
-        return render_template('update.html', CALL_SUCCESS = call_success, NPK = npk_list_dict, FORM_DATA = form_data, POPUP_DATA = popup_data)
+        return render_template('update.html', CALL_SUCCESS = call_success, NPK = npk_list_dict, FORM_DATA = form_data, POPUP_DATA = popup_data, SEVEN_DAYS = seven_days)
     
 
 @app.route('/', methods=['POST', 'GET'])

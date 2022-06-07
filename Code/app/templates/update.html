@@ -46,14 +46,15 @@
             {% if CALL_SUCCESS|length == 1 %}
             <div class="answer">
                 <h3 style="text-align: center; margin-bottom: auto; margin-top: auto;">Required Nutrient Ratio</h3>
+                    <br>
                 <dl>
-                    <dt><h4>N : </h4></dt>
+                    <dt><h4>N :&nbsp; &nbsp; </h4></dt>
                     <dd>{{ NPK[0]['Label_N'] }}</dd>
                     <br>
-                    <dt><h4>P : </h4></dt>
+                    <dt><h4>P :&nbsp; &nbsp;</h4></dt>
                     <dd>{{ NPK[0]['Label_P'] }}</dd>
                     <br>
-                    <dt><h4>K : </h4></dt>
+                    <dt><h4>K : &nbsp; &nbsp; </h4></dt>
                     <dd>{{ NPK[0]['Label_K'] }}</dd>
                     <br>
                 </dl>
@@ -76,23 +77,29 @@
                     <button type="submit">&lt; Back</button>
                 </form>
             </a>
+        </div>
+
+        {% if CALL_SUCCESS|length == 1 %}
+        <div class="days3">
+            <h3 style="text-align:left;  letter-spacing: 5px;">&nbsp;&nbsp;&nbsp;&nbsp; 7 DAYS REPORT<hr></h3>
+            <br>
+            {% for di in SEVEN_DAYS %}
+            <div class="days2">
+            {% for key,value in di.items() %}
+                  {{key}} : {{value}}
+                  <br>
+                  {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
         
-            
-
-            <!-- <button id="popup">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                popup
-            </button> -->
-        </div>
-
-        <div class="imgcontainer">
-            <img src="/static/parallax/ferti.png" alt="fert_side_img">
-        </div>
     </div>
-</section>
+<script>
+    window.scrollBy(0, 1110)
+
+</script>
+ </section>
 
 <footer class="footer">
     <div class="container2">

@@ -89,9 +89,7 @@ class BestTimeToFertilize:
                   "Relative Humidity":rh, 
                   "Rainfall":precip, 
                   "Probability of Precipitation":prob,
-                  "Weather code": w_code,
-                  "Weather Description": w_desc,
-                  "Icon code": i_code
+                  "Weather Description": w_desc
                  }
             self.weather_data.append(di)
 
