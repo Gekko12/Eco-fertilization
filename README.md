@@ -24,6 +24,8 @@
 *	pip install sklearn
 *	pip install category-encoders
 *	pip install matplotlib
+*	pip install requests
+*	pip install numpy
 
 ## Instructions
 *	Install the required modules and tools listed above.
