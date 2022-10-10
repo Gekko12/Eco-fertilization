@@ -45,3 +45,5 @@ Fertilizer use is typically under the limited control of farmers. For the farmer
 * It will show N:P:K content ratio in the soil required for the crop.
 * Also message/alert is displayed below the result. Seven days weather forecasts is also displayed along with the result. 
 
+## Reference Video 
+[Click to play video](https://drive.google.com/file/d/1lL5mmASWBbWVkvTqSFHfkhVXbXj_YDVn/view?usp=sharing)
