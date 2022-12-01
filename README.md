@@ -46,10 +46,12 @@ Fertilizer use is typically under the limited control of farmers. For the farmer
 * Also message/alert is displayed below the result. Seven days weather forecasts is also displayed along with the result. 
 
 ## Screenshots
-<div style="width:150px; height:100px">
-<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Flowchart.png" alt="FlowChart" width=30% height=20%/>
-<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Flowchart.png" alt="FlowChart" width=30% height=20%/>
-
+<div style="width:90%;">
+<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Front_Page.jpg" alt="Front" width=90%/>
+<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Section_2.jpg" alt="Section1" width=90%/>
+<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Section_2_1.jpg" alt="Section2"  width=90%/>
+<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Section_2_2.jpg" alt="Section3"  width=90%/>
+<img src="https://github.com/Gekko12/Eco-fertilization/blob/main/material/Section_2_3.jpg" alt="Section4" width=90%/>
 </div>
 
 ## Reference Video 
